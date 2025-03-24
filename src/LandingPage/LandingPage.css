@@ -13,58 +13,100 @@ body {
     top: 0px;
     left: 0px;
     opacity: 1;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     height: 812px;
     width: 375px;
-    /* background-color: #F7F8F9; */
     background: #F7F8F9 0% 0% no-repeat padding-box;
   }
   
-  .landing-card {
-    background-color: #F7F8F9;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 350px;
+  .landing-content {
+    text-align: left;
   }
   
-  .landing-card h1 {
-    font-size: 1.5rem;
+  .landing-content h1 {
+    position: relative;
+    top: 549px; /* Will be overridden by centering */
+    left: 20px;
+    width: 231px;
+    height: 33px;
+
+    font-size: 28px;
+    line-height: 17px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0px;
+    color: #1D2226;
+    opacity: 1;
     margin-bottom: 10px;
-    color: #111827;
   }
   
-  .landing-card p {
-    font-size: 0.9rem;
-    color: #6b7280;
-    margin-bottom: 20px;
+  .landing-content p {
+    position: relative;
+    top: 530px;
+    left: 20px;
+    width: 232px;
+    height: 48px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0px;
+    color: #1D2226;
+    opacity: 0.6;
   }
   
-  .create-account,
+  /* .create-account,
   .login-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border-radius: 8px;
-    border: none;
+    position: relative;
     cursor: pointer;
-    font-size: 1rem;
-  }
+  } */
   
   .create-account {
-    background-color: #7a37f6;
-    color: white;
-    margin-bottom: 10px;
-  }
+    position: relative;
+    top: 545px; 
+    left: 20px;
+    width: 335px;
+    height: 46px;
+
+    
+    background: #6C25FF 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+
+    /* Text Styling */
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
   
-  .login-button {
-    background-color: #e5d1ff;
-    color: #7a37f6;
-  }
+.login-button {
+    position: relative;
+    top: 555px; 
+    left: 20px;
+    width: 335px;
+    height: 46px;
+
+    background: #6C25FF4B 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+
+    /* Text Styling */
+    color: #1D2226;
+    text-align: center;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
   
   /* Responsive Styles */
   @media (max-width: 768px) {
