@@ -1,25 +1,146 @@
+/* Login Form Container */
 .login-container {
-    padding: 20px;
-    width: 300px;
-    margin: auto;
-  }
-  
-  .login-container input {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .login-container button {
-    background-color: #7a37f6;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 375px;
+  height: 812px;
+  background: #F7F8F9 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.login-container h1 {
+  position: relative;
+  top: 40px;
+  left: 20px;
+  width: 250px;
+  height: 69px;
+  text-align: left;
+  font-size: 28px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #1D2226;
+  opacity: 1;
+}
+
+.login-container p {
+  position: relative;
+  top: 40px;
+  left: 20px;
+  width: 232px;
+  height: 48px;
+  text-align: left;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #1D2226;
+  opacity: 0.6;
+}
+
+/* Input Group */
+.loginput-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.loginput-group label {
+  position: absolute;
+  left: 35px;
+  top: 230px;
+  transform: translateY(-40%);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #888;
+  transition:0.3s ease-in-out;
+  pointer-events: none; 
+  z-index: 2;
+  background: #F7F8F9;
+  padding: 0 5px;
+}
+
+/* Move label up when input is focused or has text */
+.loginput-group input:focus + label,
+.loginput-group input:not(:placeholder-shown) + label {
+  top: 210px;
+  left: 30px;
+  font-size: 12px;
+  color: #6C25FF;
+  background: #F7F8F9;
+}
+
+
+.loginput-grouppass label {
+  position: absolute;
+  left: 35px;
+  top: 285px;
+  transform: translateY(-40%);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #888;
+  transition:0.3s ease-in-out;
+  pointer-events: none; 
+  z-index: 2;
+  background: #F7F8F9;
+  padding: 0 5px;
+}
+
+/* Move label up when input is focused or has text */
+.loginput-grouppass input:focus + label,
+.loginput-grouppass input:not(:placeholder-shown) + label {
+  top: 265px;
+  left: 30px;
+  font-size: 12px;
+  color: #6C25FF;
+  background: #F7F8F9;
+}
+
+/* Inputs */
+.login-container input {
+  position: relative;
+  top: 60px;
+  width: 315px;
+  height: 37px;
+  left: 20px;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transform: translateY(-10%);
+  transition: border 0.3s ease-in-out;
+}
+
+/* Login Button */
+.login-container button {
+  position: relative;
+  top: 70px;
+  color: white;
+  background: #CBCBCB 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+  padding: 12px;
+  height: 40px;
+  left: 20px;
+  width: 320px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.login-container button:hover {
+  background-color: #cbcbcbce;
+}
