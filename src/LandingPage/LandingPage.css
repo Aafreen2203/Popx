@@ -1,0 +1,91 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .landing-container {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 812px;
+    width: 375px;
+    /* background-color: #F7F8F9; */
+    background: #F7F8F9 0% 0% no-repeat padding-box;
+  }
+  
+  .landing-card {
+    background-color: #F7F8F9;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .landing-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #111827;
+  }
+  
+  .landing-card p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 20px;
+  }
+  
+  .create-account,
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .create-account {
+    background-color: #7a37f6;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .login-button {
+    background-color: #e5d1ff;
+    color: #7a37f6;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .landing-card {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .landing-card h1 {
+      font-size: 1.4rem;
+    }
+  
+    .create-account,
+    .login-button {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .landing-card h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
