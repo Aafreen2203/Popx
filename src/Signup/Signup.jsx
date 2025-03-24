@@ -20,16 +20,16 @@ const Signup = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // ✅ Prevent default form submission
+    e.preventDefault(); 
 
-    // ✅ Basic validation (Ensure required fields are filled)
+    // Basic validation ensured required feilds are filled
     if (!formData.fullName || !formData.phoneNumber || !formData.email || !formData.password) {
       alert("Please fill out all required fields.");
       return;
     }
 
-    console.log("User Registered:", formData); // ✅ Simulate form submission
-    navigate("/profile"); // ✅ Redirect to profile after form submission
+    console.log("User Registered:", formData); // form submission
+    navigate("/profile"); // Redirect to profile after form submission
   };
 
   return (
@@ -37,7 +37,6 @@ const Signup = () => {
       <div className="form-box">
         <h2>Create your PopX account</h2>
         <form onSubmit={handleSubmit}>
-          {/* Floating Label Inputs */}
           {["fullName", "phoneNumber", "email", "password"].map((field, index) => (
             <div className="input-group" key={index}>
               <input
@@ -90,7 +89,6 @@ const Signup = () => {
             </div>
           </div>
 
-          {/* Submit Button */}
           <button type="submit">Create Account</button>
         </form>
       </div>

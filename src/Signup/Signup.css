@@ -53,9 +53,22 @@ h2 {
   padding: 10px;
   font-size: 12px !important;
   background-color: transparent !important;
+  background: transparent;
   outline: none;
   z-index: 1; 
 }
+
+/* Prevent background color change due to autofill */
+.input-group input:-webkit-autofill,
+.input-group input:-webkit-autofill:hover, 
+.input-group input:-webkit-autofill:focus, 
+.input-group input:-webkit-autofill:active {
+  background: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  color: #1D2226 !important; 
+}
+
 
 /* Label Styling */
 .input-group label {
