@@ -6,6 +6,7 @@
   width: 375px;
   height: 812px;
   background: #F7F8F9 0% 0% no-repeat padding-box;
+  border: 2px solid #f1f1f1;
   opacity: 1;
 }
 
@@ -52,7 +53,7 @@
 .loginput-group label {
   position: absolute;
   left: 35px;
-  top: 230px;
+  top: 245px;
   transform: translateY(-40%);
   font-size: 14px;
   line-height: 17px;
@@ -70,7 +71,7 @@
 /* Move label up when input is focused or has text */
 .loginput-group input:focus + label,
 .loginput-group input:not(:placeholder-shown) + label {
-  top: 210px;
+  top: 227px;
   left: 30px;
   font-size: 12px;
   color: #6C25FF;
@@ -81,7 +82,7 @@
 .loginput-grouppass label {
   position: absolute;
   left: 35px;
-  top: 285px;
+  top: 303px;
   transform: translateY(-40%);
   font-size: 14px;
   line-height: 17px;
@@ -99,7 +100,7 @@
 /* Move label up when input is focused or has text */
 .loginput-grouppass input:focus + label,
 .loginput-grouppass input:not(:placeholder-shown) + label {
-  top: 265px;
+  top: 285px;
   left: 30px;
   font-size: 12px;
   color: #6C25FF;

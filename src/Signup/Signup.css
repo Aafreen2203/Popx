@@ -12,6 +12,7 @@ body {
   align-items: left;
   width: 375px;
   height: 812px;
+  border: 2px solid #f1f1f1;
   background: #F7F8F9 0% 0% no-repeat padding-box;
   opacity: 1;
 }
@@ -50,7 +51,8 @@ h2 {
   border-radius: 6px;
   background: transparent;
   padding: 10px;
-  font-size: 16px;
+  font-size: 12px !important;
+  background-color: transparent !important;
   outline: none;
   z-index: 1; 
 }
@@ -71,6 +73,22 @@ h2 {
   pointer-events: none; 
   z-index: 2;
 }
+
+.input-group label.required::after {
+  content: " *";
+  color: #888;
+  transition: color 0.3s ease-in-out;
+}
+
+.input-group input:focus + label::after {
+  color: red;
+}
+
+/* Remove asterisk for "Company name" */
+.input-group:last-of-type label::after {
+  content: "";
+}
+
 
 /* Move label up when input is focused or has text */
 .input-group input:focus + label,
@@ -132,6 +150,10 @@ h2 {
   font-family: 'Rubik', sans-serif;
   color: #1D2226;
   cursor: pointer;
+}
+
+.radio-options label:first-of-type::after {
+  content: "";
 }
 
 /* Custom Radio Button */

@@ -1,7 +1,9 @@
 import React from "react";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <div className="login-container">
       <h1>Signin to your PopX account</h1>
@@ -17,7 +19,7 @@ const Login = () => {
         <label htmlFor="password">Password</label>
       </div>
 
-      <button className="loginbtn">Login</button>
+      <button className="loginbtn" onClick={() => navigate("/profile")}>Login</button>
     </div>
   );
 };
