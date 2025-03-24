@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 375px;
+  height: 812px;
+  background: #F7F8F9 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+h2 {
+  position: relative;
+  top: 40px;
+  left: 20px;
+  width: 188px;
+  height: 69px;
+  text-align: left;
+  line-height: 36px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0px;
+  color: #1D2226;
+  opacity: 1;
+}
+
+
+.input-group {
+  position: relative;
+  margin-bottom: 29px;
+  top: 60px;
+  
+}
+
+/* Input Styling */
+.input-group input {
+  position: relative;
+  width: 315px;
+  height: 20px;
+  left: 20px;
+  border: 1px solid #CBCBCB;
+  border-radius: 6px;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  z-index: 1; 
+}
+
+/* Label Styling */
+.input-group label {
+  position: absolute;
+  left: 35px;
+  top: 40%;
+  transform: translateY(-10%);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #888;
+  transition: 0.3s ease-in-out;
+  pointer-events: none; 
+  z-index: 2;
+}
+
+/* Move label up when input is focused or has text */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -5px;
+  left: 30px;
+  font-size: 12px;
+  color: #6C25FF;
+  background: #F7F8F9;
+  padding: 0 5px;
+}
+
+/* Radio Group Container */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  position: relative;
+  align-items: left;
+  top: 60px;
+  left: 20px;
+}
+
+/* "Are you an Agency?" label */
+.radio-group label:first-of-type {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+  opacity: 1;
+  font-family: 'Rubik', sans-serif;
+  color: #1D2226;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* Red asterisk for required field */
+.radio-group label:first-of-type::after {
+  content: " *";
+  color: red;
+}
+
+/* Radio Options (Aligning Horizontally) */
+.radio-options {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between Yes and No */
+  margin-left: 2px;
+}
+
+/* Style for individual radio labels */
+.radio-options label {
+  position: relative;
+  display: flex;
+  align-items: left;
+  gap: 8px; 
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  color: #1D2226;
+  cursor: pointer;
+}
+
+/* Custom Radio Button */
+.radio-options input[type="radio"] {
+  width: 22px; 
+  height: 22px;
+  appearance: none;
+  border: 2px solid #CBCBCB;
+  align-items: left;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-options .no-radiobtn {
+  width: 22px; 
+  height: 22px;
+  appearance: none;
+  top: -3px;
+  border: 2px solid #CBCBCB;
+  align-items: left;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Checked State (Purple) */
+.radio-options input[type="radio"]:checked {
+  border-color: #6C25FF; 
+}
+
+/* Inner Circle Effect */
+.radio-options input[type="radio"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #6C25FF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.radio-options input[type="radio"]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* Submit Button */
+button {
+  position: relative;
+  top: 206px;
+  left: 20px;
+  height: 46px;
+  width: 335px;
+  border: none;
+  background: #6C25FF 0% 0% no-repeat padding-box;
+
+  /* text */
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  font-weight: 500;
+  line-height: 17px;
+  font-family: 'Rubik', sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+button:hover {
+  background: #5a1fb1;
+}
