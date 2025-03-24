@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Profile.css";
 import profile from "../assets/profile.png";
-import cameraimg from "../assets/cameraimg.svg"; 
+import cameraimg from "../assets/cameraimg.svg";
 
 const Profile = () => {
+  const navigate = useNavigate();
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    // ✅ Fetch user data from localStorage
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    if (storedUser) {
+      setUserData(storedUser);
+    } else {
+      alert("No user logged in. Redirecting to login...");
+      navigate("/login");
+    }
+  }, [navigate]);
+
   return (
     <div className="profile-container">
       <div className="profile-titlecont">
@@ -17,8 +32,14 @@ const Profile = () => {
         </div>
 
         <div className="profile-info">
-          <h2 className="profile-name">Marry Doe</h2>
-          <p className="profile-email">Marry@gmail.com</p>
+          {userData ? (
+            <>
+              <h2 className="profile-name">{userData.fullName}</h2>
+              <p className="profile-email">{userData.email}</p>
+            </>
+          ) : (
+            <p>Loading...</p>
+          )}
         </div>
       </div>
 

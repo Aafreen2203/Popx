@@ -22,14 +22,16 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); 
 
-    // Basic validation ensured required feilds are filled
     if (!formData.fullName || !formData.phoneNumber || !formData.email || !formData.password) {
       alert("Please fill out all required fields.");
       return;
     }
 
-    console.log("User Registered:", formData); // form submission
-    navigate("/profile"); // Redirect to profile after form submission
+    // ✅ Save user data in localStorage
+    localStorage.setItem("user", JSON.stringify(formData));
+
+    console.log("User Registered:", formData);
+    navigate("/profile"); // Redirect to profile after signup
   };
 
   return (
@@ -58,10 +60,10 @@ const Signup = () => {
               onChange={handleChange}
               placeholder=" "
             />
-            <label>Company name </label>
+            <label>Company Name</label>
           </div>
 
-          {/* Radio Buttons for Agency Selection */}
+          {/* Radio Buttons */}
           <div className="radio-group">
             <label>Are you an Agency?</label>
             <div className="radio-options">
