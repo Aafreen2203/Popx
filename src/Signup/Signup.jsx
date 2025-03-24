@@ -60,7 +60,7 @@ const Signup = () => {
               onChange={handleChange}
               placeholder=" "
             />
-            <label>Company Name</label>
+            <label>comapany name</label>
           </div>
 
           {/* Radio Buttons */}
