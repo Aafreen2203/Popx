@@ -1,18 +1,121 @@
+/* Profile Container */
 .profile-container {
-    padding: 20px;
-    width: 300px;
-    margin: auto;
-    border: 1px solid #ddd;
-  }
-  
-  .account-settings {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .account-settings img {
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
+ position: relative;
+ top: 0px;
+ left: 0px;
+ width: 375px;
+ height: 812px;
+ background: #F7F8F9 0% 0% no-repeat padding-box;
+ border: 2px solid #f1f1f1;
+ opacity: 1;
+}
+
+/* Account Settings Title */
+
+.profile-titlecont {
+  position: relative;
+  top: -18px;
+  left: 0px;
+  width: 375px;
+  height: 68px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 20px #00000007;
+  opacity: 1;
+}
+
+
+.profile-title {
+  position: relative;
+  top: 27px;
+  left: 15px;
+  width: 146px;
+  height: 22px;
+  text-align: left;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: #1D2226;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+/* Profile Card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #f7f8f9;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Profile Image Container */
+.profile-image-container {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  left: 10px;
+  top: -25px;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+}
+
+/* Camera Icon */
+.camera-icon {
+  position: absolute;
+  bottom: 0;
+  left: 57px;
+  width: 21px;
+  height: 23px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+/* Profile Info */
+.profile-info {
+  position: relative;
+  top: -65px;
+  left: 10px;
+  flex: 1;
+}
+
+/* Name & Email */
+.profile-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.profile-email {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  position: relative;
+  left: 20px;
+  top: -10px;
+}
+
+/* Description */
+.profile-description {
+  text-align: left;
+  position: relative;
+  left: 20px;
+  top: -54px;
+  width: 337px;
+  height: 63px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #1D2226;
+  text-transform: capitalize;
+  opacity: 1;
+}
